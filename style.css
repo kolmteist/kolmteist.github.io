@@ -27,3 +27,28 @@ a {
         background: #0000ff;
 	    color: #fff;
 }
+span.line_wrap {
+        position: relative;
+        display: inline-block;        
+}
+span.line {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 1%;
+        width: 0;
+        border-top: 3px solid #0000ff;
+        -webkit-transition: all 500ms cubic-bezier(1, 0, 0, 1);
+        -moz-transition: all 500ms cubic-bezier(1, 0, 0, 1);
+}
+span.line_wrap:hover span.line {
+        width: 100%;    
+}
+#bottom {
+	left: 0; 
+	right: 0;
+	height: 3px;
+	background: #0000ff;
+	position: fixed;
+	bottom: 50%;
+}
