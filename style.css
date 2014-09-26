@@ -3,7 +3,7 @@ html {
 }
 a {
 	font-family: Arial, Helvetica, Sans-Serif;
-        font-size: 40px;
+        font-size: 42px;
         color: #0000ff;
         text-decoration: none;
 }
@@ -37,7 +37,7 @@ span.line {
         left: 0;
         bottom: 1%;
         width: 0;
-        border-top: 3px solid #0000ff;
+        border-top: 4px solid #0000ff;
         -webkit-transition: all 500ms cubic-bezier(1, 0, 0, 1);
         -moz-transition: all 500ms cubic-bezier(1, 0, 0, 1);
 }
@@ -45,10 +45,10 @@ span.line_wrap:hover span.line {
         width: 100%;    
 }
 #bottom {
-	left: 0; 
-	right: 0;
-	height: 3px;
-	background: #0000ff;
+	background: #0000FF;
+	bottom: 0;
+	top: 0;
+	left: 50%;
 	position: fixed;
-	bottom: 50%;
+	width: 4px;
 }
