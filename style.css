@@ -49,3 +49,8 @@ span.line_wrap:hover span.line {
 	position: fixed;
 	width: 4px;
 }
+.404 {
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle
+}
