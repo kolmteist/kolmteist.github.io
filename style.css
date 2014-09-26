@@ -2,14 +2,11 @@ html {
 	font-size: 100%;
 }
 a {
-	font-family: Helvetica, Arial, Sans-Serif;
+	font-family: Arial, Helvetica, Sans-Serif;
         font-size: 40px;
-        color: #000;
+        color: #0000ff;
         text-decoration: none;
 }
-a:link:hover {
-        -moz-animation: blink 350ms steps(1, end) infinite;
-        -webkit-animation: blink 350ms steps(1, end) infinite;
 }
 .title {
         display: inline;
@@ -30,12 +27,4 @@ a:link:hover {
 ::-moz-selection {
         background: #0000ff;
 	    color: #fff;
-}
-@-moz-keyframes blink {
-        0% { color: #fff; }
-        50% { color: #000; }
-}
-@-webkit-keyframes blink {
-        0% { color: #fff; }
-        50% { color: #000; }
 }
