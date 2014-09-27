@@ -12,7 +12,7 @@ a {
 }
 .mail {
         margin: 0;
-    	position: absolute;
+    	position: fixed;
     	top: 24px;
     	left: 50%;
     	margin-right: -50%;
