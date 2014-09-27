@@ -16,6 +16,7 @@ a {
     	top: 24px;
     	left: 50%;
     	margin-right: -50%;
+    	padding-left: 32px;
 }
 ::selection {
         background: #0000ff;
