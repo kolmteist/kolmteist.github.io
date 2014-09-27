@@ -11,10 +11,11 @@ a {
         left: 32px;
 }
 .mail {
-        display: inline;
-        position: fixed;
-        top: 24px;
-        right: 32px;
+        margin: 0;
+    	position: absolute;
+    	top: 24px;
+    	left: 50%;
+    	margin-right: -50%;
 }
 ::selection {
         background: #0000ff;
