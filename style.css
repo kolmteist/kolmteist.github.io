@@ -1,10 +1,10 @@
 a {
 	font-family: Arial, Helvetica, Sans-Serif;
-        color: #0000ff;
         text-decoration: none;
 }
 .title {
 	font-size: 42px;
+	color: #0000ff;
         display: inline;
         position: fixed;
         top: 24px;
@@ -12,6 +12,7 @@ a {
 }
 .mail {
 	font-size: 42px;
+	color: #0000ff;
         margin: 0;
     	position: fixed;
     	top: 24px;
@@ -58,4 +59,5 @@ span.line_wrap:hover span.line {
         top: 50%;
         margin: -48px -331px;
         font-size: 84px;
+        color: #fff;
 }
