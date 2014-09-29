@@ -52,9 +52,10 @@ span.line_wrap:hover span.line {
 	position: fixed;
 	width: 4px;
 }
-div.container4 a{
+.container4 a{
         position: absolute;
         left: 50%;
         top: 50%;
         margin: -24px -165px;
+        font-size: 84px;
 }
