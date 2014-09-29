@@ -31,7 +31,7 @@ span.line_wrap {
         display: inline-block;        
 }
 span.line {
-        display: inline-block;
+	display: inline-block;
         position: absolute;
         left: 0;
         bottom: 1%;
@@ -52,10 +52,10 @@ span.line_wrap:hover span.line {
 	width: 4px;
 }
 div.container4 h2{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+	margin: 0;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translate(-50%, -50%);
+	width: 8em;
 }
