@@ -1,16 +1,17 @@
 a {
 	font-family: Arial, Helvetica, Sans-Serif;
-        font-size: 42px;
         color: #0000ff;
         text-decoration: none;
 }
 .title {
+	font-size: 42px;
         display: inline;
         position: fixed;
         top: 24px;
         left: 32px;
 }
 .mail {
+	font-size: 42px;
         margin: 0;
     	position: fixed;
     	top: 24px;
