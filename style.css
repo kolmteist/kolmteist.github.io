@@ -52,10 +52,8 @@ span.line_wrap:hover span.line {
 	width: 4px;
 }
 div.container4 a{
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -24px -165px;
 }
