@@ -22,7 +22,6 @@ a {
     	left: 50%;
     	margin-right: -50%;
     	padding-left: 32px;
-    	text-decoration: none;
 }
 ::selection {
         background: #0000ff;
