@@ -5,6 +5,9 @@ a {
 	font-family: Arial, Helvetica, Sans-Serif;
         text-decoration: none;
 }
+a:visited {
+	color: #0000ff;
+}
 .title {
 	font-size: 42px;
 	color: #0000ff;
