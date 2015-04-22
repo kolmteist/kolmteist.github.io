@@ -15,7 +15,7 @@ a:hover {
 	color: #0000ff;
 }
 .title {
-	font-size: 5vw;
+	font-size: 3vw;
 	color: #0000ff;
         display: inline;
         position: fixed;
@@ -23,7 +23,7 @@ a:hover {
         left: 32px;
 }
 .mail {
-	font-size: 5vw;
+	font-size: 3vw;
 	color: #0000ff;
         margin: 0;
     	position: fixed;
