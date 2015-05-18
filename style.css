@@ -22,11 +22,6 @@ a:hover {
         top: 24px;
         left: 32px;
 }
-.title:hover {
-	color: transparent;
-  	text-shadow: #0000ff 0 0 3vw;
-  	transition: 0.4s;
-}
 .mail {
 	font-size: 3vw;
 	color: #0000ff;
