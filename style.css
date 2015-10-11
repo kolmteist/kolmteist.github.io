@@ -1,75 +1,9 @@
-html {
-	-webkit-font-smoothing: antialiased;
-}
-a {
-	font-family: Arial, Helvetica, Sans-Serif;
-        text-decoration: none;
-}
-a:link {
-	color: #0000ff;
-}
-a:visited {
-	color: #0000ff;
-}
-a:hover {
-	color: #0000ff;
-}
-.title {
-	font-size: 3vw;
-	color: #0000ff;
-        display: inline;
-        position: fixed;
-        top: 24px;
-        left: 32px;
-}
-.mail {
-	font-size: 3vw;
-	color: #0000ff;
-        margin: 0;
-    	position: fixed;
-    	top: 24px;
-    	left: 50%;
-    	margin-right: -50%;
-    	padding-left: 32px;
-}
-::selection {
-        background: #0000ff;
-	    color: #fff;
-}
-::-moz-selection {
-        background: #0000ff;
-	    color: #fff;
-}
-span.line_wrap {
-        position: relative;
-        display: inline-block;        
-}
-span.line {
-	display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 1%;
-        width: 0;
-        border-top: 0.25vw solid #0000ff;
-        -webkit-transition: all 500ms cubic-bezier(1, 0, 0, 1);
-        -moz-transition: all 500ms cubic-bezier(1, 0, 0, 1);
-}
-span.line_wrap:hover span.line {
-        width: 100%;    
-}
-#bottom {
-	background: #0000FF;
-	bottom: 0;
-	top: 0;
-	left: 50%;
-	position: fixed;
-	width: 0.25vw;
-}
-.container4 a{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin: -48px -331px;
-        font-size: 84px;
-        color: #fff;
+.bgvideo {
+    position:fixed;
+    right: 0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height:auto;
 }
