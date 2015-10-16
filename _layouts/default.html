@@ -7,10 +7,10 @@
     <meta name="google-site-verification" content="gIbc0Ji3rEi5eOa5Cp6-bG9BJMGClc7rICBpAm9iRfE" />
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}</title>
-  <meta name="robots" content="nosnippet">
-  <meta name="author" content="Henri Papson">
-  <meta name="keywords" content="Henri Papson">
-  <meta name="copyright" content="Henri Papson">
+	<meta name="robots" content="nosnippet">
+	<meta name="author" content="Henri Papson">
+	<meta name="keywords" content="Henri Papson">
+	<meta name="copyright" content="Henri Papson">
 
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,13 +19,24 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    <script src="//api.html5media.info/1.1.8/html5media.min.js"></script>
   </head>
 
   <body>
-    <video autoplay loop muted class="bgvideo" id="bgvideo">
-      <source src="MP4/INFO_4-HD.mp4" type="video/mp4">
-    </video>
+    <header>
+        <div class="title">
+            <a>{{ site.name }}</a>
+        </div>
+        <div class="mail">
+            <span class='line_wrap'><span class='line'></span>
+              <a href="mailto:info@henri.ee">E-MAIL</a>
+            </span>
+            <a>&</a>
+            <span class='line_wrap'><span class='line'></span>
+              <a href="http://nr-i.tumblr.com" target="_blank">TUMBLR</a>
+            </span>
+        </div>
+ 	  </header>
+ 	  <div id="bottom"></div>
     {% include analytics.html %}
   </body>
 </html>
