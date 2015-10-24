@@ -59,6 +59,6 @@ span.line_wrap:hover span.line {
     .mail {
         bottom: 0;
         height: 50%;
-        border-top: 0.25vw solid #0000ff;
+        border-top: 0.25vh solid #0000ff;
     }
 }
