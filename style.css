@@ -5,6 +5,7 @@ a {
     font-family: Arial, sans-serif;
     color: #0000ff;
     text-decoration: none;
+    text-rendering: optimizeLegibility;
 }
 .title,
 .mail {
