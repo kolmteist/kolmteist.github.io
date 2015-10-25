@@ -25,7 +25,7 @@ span.line {
     left: 0;
     bottom: 1%;
     width: 0;
-    border-top: 0.25vw solid #0000ff;
+    border-top: 3px solid #0000ff;
     -webkit-transition: all 500ms cubic-bezier(1, 0, 0, 1);
     -moz-transition: all 500ms cubic-bezier(1, 0, 0, 1);
 }
@@ -45,7 +45,7 @@ span.line_wrap:hover span.line {
     .mail {
         right: 0;
         width: 50%;
-        border-left: 0.25vw solid #0000ff;
+        border-left: 3px solid #0000ff;
     }
 }
 @media all and (orientation: portrait) {
