@@ -23,12 +23,16 @@
 
 <body>
     <div class="title">
-        <a>{{ site.name }}</a>
+    	<div class="nimi">
+        	<a>{{ site.name }}</a>
+        </div>div>
     </div>
     <div class="mail">
-        <span class='line_wrap'><span class='line'></span>
-        <a href="mailto:info@henri.ee">E-MAIL</a>
-        </span>
+		<div class="email">
+        	<span class='line_wrap'><span class='line'></span>
+        	<a href="mailto:info@henri.ee">E-MAIL</a>
+        	</span>
+        </div>
     </div>
     {% include analytics.html %}
 </body>
