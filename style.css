@@ -10,8 +10,8 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.nimi,
-.email {
+.title,
+.mail {
     position: absolute;
     font-size: 51px;
     padding-top: 20px;
