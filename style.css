@@ -18,6 +18,14 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+::-moz-selection {
+  background: blue;
+  color: #fff;
+}
+::selection {
+  background: blue;
+  color: #fff;
+}
 .title,
 .mail {
     position: absolute;
