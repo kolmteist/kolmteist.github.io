@@ -1,19 +1,85 @@
-*{margin:0;padding:0;}
-html{height:100%;width:100%;}
-a{font-family:Arial, sans-serif;color:#000;font-size:5em;line-height:1em;text-decoration:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
-.vasak,.parem{position:absolute;width:100%;height:100%;}
-.centerer{display:inline-block;height:100%;vertical-align:middle;}
-.centered{display:inline-block;vertical-align:middle;width:50%;}
-.vasak-pilt{text-align:center;width:100%;height:100%;}
-.vasak-tekst,.parem-tekst{display:inline-block;position:absolute;padding-top:25px;padding-left:25px;}
-span.line_wrap{position:relative;display:inline-block;}
-span.line{display:inline-block;position:absolute;left:0;top:100%;width:0;border-top:7px solid #000;-webkit-transition:all 500ms cubic-bezier(1,0,0,1);-moz-transition:all 500ms cubic-bezier(1,0,0,1);}
-span.line_wrap:hover span.line{width:100%;}
-@media all and orientation landscape {
-.vasak{left:0;width:50%;}
-.parem{right:0;width:50%;border-left:7px solid #000;}
+* {
+  margin: 0;
+  padding: 0;
 }
-@media all and orientation portrait {
-.vasak{top:0;height:50%;}
-.parem{bottom:0;height:50%;border-top:7px solid #000;}
+html {
+    height: 100%;
+    width: 100%;
+}
+a {
+    font-family: Arial, sans-serif;
+    color: #000;
+    font-size: 5em;
+    line-height: 1em;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.vasak, .parem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+@media all and (orientation: landscape) {
+    .vasak {
+        left: 0;
+        width: 50%;
+    }
+    .parem {
+        right: 0;
+        width: 50%;
+        border-left: 7px solid #000;
+    }
+}
+@media all and (orientation: portrait) {
+    .vasak {
+        top: 0;
+        height: 50%;
+    }
+    .parem {
+        bottom: 0;
+        height: 50%;
+        border-top: 7px solid #000;
+    }
+}
+.centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.centered
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+}
+.vasak-pilt {
+    text-align: center;
+        width: 100%;
+    height: 100%;
+}
+.vasak-tekst, .parem-tekst {
+    display: inline-block;
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+span.line_wrap {
+    position: relative;
+    display: inline-block;
+}
+span.line {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    border-top: 7px solid #000;
+    -webkit-transition: all 500ms cubic-bezier(1, 0, 0, 1);
+    -moz-transition: all 500ms cubic-bezier(1, 0, 0, 1);
+}
+span.line_wrap:hover span.line {
+    width: 100%;
 }
