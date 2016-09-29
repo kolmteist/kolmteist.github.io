@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 html {
     height: 100%;
@@ -16,28 +16,28 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.vasak, .parem {
+.left, .right {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 @media all and (orientation: landscape) {
-    .vasak {
+    .left {
         left: 0;
         width: 50%;
     }
-    .parem {
+    .right {
         right: 0;
         width: 50%;
         border-left: 7px solid #000;
     }
 }
 @media all and (orientation: portrait) {
-    .vasak {
+    .left {
         top: 0;
         height: 50%;
     }
-    .parem {
+    .right {
         bottom: 0;
         height: 50%;
         border-top: 7px solid #000;
@@ -55,12 +55,12 @@ a {
     vertical-align: middle;
     width: 50%;
 }
-.vasak-pilt {
+.left-pic {
     text-align: center;
     width: 100%;
     height: 100%;
 }
-.vasak-tekst, .parem-tekst {
+.left-txt, .right-txt {
     display: inline-block;
     position: absolute;
     padding-top: 25px;
