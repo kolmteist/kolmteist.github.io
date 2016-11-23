@@ -16,6 +16,10 @@ a {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+a img:hover{
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
 .left, .right {
     position: absolute;
     width: 100%;
