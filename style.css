@@ -17,20 +17,20 @@ a {
     -moz-osx-font-smoothing: grayscale;
 }
 img {
-    -webkit-transition: 0.15s linear;
-    -moz-transition: 0.15s linear;
-    -ms-transition: 0.15s linear;
-    -o-transition: 0.15s linear;
-    transition: 0.15s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
 }
 img:hover{
     -webkit-filter: blur(2px);
     filter: blur(2px);
-    -webkit-transition: 0.1s linear;
-    -moz-transition: 0.1s linear;
-    -ms-transition: 0.1s linear;
-    -o-transition: 0.1s linear;
-    transition: 0.1s linear;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
 }
 .left, .right {
     position: absolute;
