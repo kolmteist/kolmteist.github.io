@@ -45,7 +45,7 @@ img:hover{
     .right {
         right: 0;
         width: 50%;
-        border-left: 7px solid #000;
+        border-left: 8px solid #000;
     }
 }
 @media all and (orientation: portrait) {
@@ -56,7 +56,7 @@ img:hover{
     .right {
         bottom: 0;
         height: 50%;
-        border-top: 7px solid #000;
+        border-top: 8px solid #000;
     }
 }
 .centerer
@@ -92,7 +92,7 @@ span.line {
     left: 0;
     top: 100%;
     width: 0;
-    border-top: 7px solid #000;
+    border-top: 8px solid #000;
     -webkit-transition: all 500ms cubic-bezier(1, 0, 0, 1);
     -moz-transition: all 500ms cubic-bezier(1, 0, 0, 1);
 }
