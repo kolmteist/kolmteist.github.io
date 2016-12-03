@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-body,html {
+body {
     height: 100%;
     width: 100%;
 }
@@ -98,9 +98,4 @@ span.line {
 }
 span.line_wrap:hover span.line {
     width: 100%;
-}
-.snow {
-  height: 100%;
-  position: absolute;
-  width: 100%;
 }
