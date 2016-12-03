@@ -99,3 +99,9 @@ span.line {
 span.line_wrap:hover span.line {
     width: 100%;
 }
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}

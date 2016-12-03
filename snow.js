@@ -1,74 +1,60 @@
-var canvas = document.getElementById('snow'),
+// http://codepen.io/otsukatomoya/pen/gbDxF/
+
+var w = window.innerWidth,
+    h = window.innerHeight,
+    canvas = document.getElementById('snow'),
     ctx = canvas.getContext('2d'),
-    width = ctx.canvas.width = document.body.offsetWidth,
-    height = ctx.canvas.height = document.body.offsetHeight,
-    animFrame = window.requestAnimationFrame ||
-                window.mozRequestAnimationFrame ||
-                window.webkitRequestAnimationFrame ||
-                window.msRequestAnimationFrame,
-    snowflakes = [];
+    rate = 50,
+    arc = 500,
+    time,
+    count,
+    size = 2,
+    speed = 10,
+    lights = new Array,
+    colors = ['#eee'];
 
-window.onresize = function() {
-  width = ctx.canvas.width = document.body.offsetWidth,
-    height = ctx.canvas.height = document.body.offsetHeight;
-}
+canvas.setAttribute('width',w);
+canvas.setAttribute('height',h);
 
-function update() {
-  for (var i = 0; i < snowflakes.length; i++) {
-    snowflakes[i].update();
+function init() {
+  time = 0;
+  count = 0;
+
+  for(var i = 0; i < arc; i++) {
+    lights[i] = {
+      x: Math.ceil(Math.random() * w),
+      y: Math.ceil(Math.random() * h),
+      toX: Math.random() * 5 + 1,
+      toY: Math.random() * 5 + 1,
+      c: colors[Math.floor(Math.random()*colors.length)],
+      size: Math.random() * size
+    }
   }
 }
 
-function Snow() {
-  this.x = random(0, width);
-  this.y = random(-height, 0);
-  this.radius = random(0.5, 3.0);
-  this.speed = random(1, 3);
-  this.wind = random(-0.5, 3.0);
-}
+function bubble() {
+  ctx.clearRect(0,0,w,h);
 
-Snow.prototype.draw = function() {
-  ctx.beginPath();
-  ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-  ctx.fillStyle = '#000';
-  ctx.fill();
-  ctx.closePath();
-}
+  for(var i = 0; i < arc; i++) {
+    var li = lights[i];
 
-Snow.prototype.update = function() {
-  this.y += this.speed;
-  this.x += this.wind;
+    ctx.beginPath();
+    ctx.arc(li.x,li.y,li.size,0,Math.PI*2,false);
+    ctx.fillStyle = li.c;
+    ctx.fill();
 
-  if (this.y > ctx.canvas.height) {
-    this.y = 0;
-    this.x = random(0, width);
+    li.x = li.x + li.toX * (time * 0.05);
+    li.y = li.y + li.toY * (time * 0.05);
+
+    if(li.x > w) { li.x = 0; }
+    if(li.y > h) { li.y = 0; }
+    if(li.x < 0) { li.x = w; }
+    if(li.y < 0) { li.y = h; }
   }
-}
-
-function createSnow(count) {
-  for (var i = 0; i < count; i++) {
-    snowflakes[i] = new Snow();
+  if(time < speed) {
+    time++;
   }
+  timerID = setTimeout(bubble,1000/rate);
 }
-
-function draw() {
-  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-  for (var i = 0; i < snowflakes.length; i++) {
-    snowflakes[i].draw();
-  }
-}
-
-function loop() {
-  draw();
-  update();
-  animFrame(loop);
-}
-
-function random(min, max) {
-  var rand = (min + Math.random() * (max - min)).toFixed(1);
-  rand = Math.round(rand);
-  return rand;
-}
-
-createSnow(150);
-loop();
+init();
+bubble();
