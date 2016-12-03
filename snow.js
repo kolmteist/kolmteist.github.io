@@ -30,7 +30,7 @@ function Snow() {
 Snow.prototype.draw = function() {
   ctx.beginPath();
   ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-  ctx.fillStyle = '#fff';
+  ctx.fillStyle = '#000';
   ctx.fill();
   ctx.closePath();
 }
