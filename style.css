@@ -24,8 +24,8 @@ img {
     transition: 0.2s linear;
 }
 img:hover{
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
+    -webkit-filter: blur(2px) hue-rotate(360deg);
+    filter: blur(2px) hue-rotate(360deg);
     -webkit-transition: 0.2s linear;
     -moz-transition: 0.2s linear;
     -ms-transition: 0.2s linear;
