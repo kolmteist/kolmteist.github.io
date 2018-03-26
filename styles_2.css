@@ -14,6 +14,9 @@ body {
 
 .cell img {
   display: block;
+}
+
+.cell {
   padding: 10px;
 }
 
@@ -31,6 +34,6 @@ body {
 
 @media screen and (min-width: 1000px) {
   .cell {
-    width: calc(100% / 3);
+    width: 50%;
   }
 }
