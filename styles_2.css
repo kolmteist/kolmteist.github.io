@@ -1,35 +1,18 @@
-body {
-  box-sizing: border-box;
-  margin: 0;
+.flex-container {
+  flex-direction: row;
+  display: -webkit-flex;
+  display: inline-flex;
+  background-color: #f5f7f9;
+  width: 100%;
+  align-content: center;
+  flex-flow: row wrap;
+  margin-top: 100px;
 }
 
-.container {
-  margin: auto;
-  max-width: 1200px;
-}
-
-.responsive-image {
-  max-width: 95%;
-}
-
-.cell img {
-  display: block;
-}
-
-
-@media screen and (min-width: 600px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .cell {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .cell {
-    width: calc(100% / 3);
-  }
+.flex-item {
+  width: 100%;
+  margin: 10px;
+  order: 1;
+  border-radius: 3px;
+  padding: 0 10px 40px 10px;
 }
