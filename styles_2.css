@@ -5,11 +5,11 @@
 
 .responsive-image {
   max-width: 95%;
-  padding-top: 30px;
+  padding-top: 32px;
   margin: auto;
 }
 
-.cell img {
+.pilt img {
   display: block;
 }
 
@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .cell {
+  .pilt {
     width: 50%;
   }
 }
