@@ -16,10 +16,6 @@ body {
   display: block;
 }
 
-.cell {
-  padding: 10px;
-}
-
 
 @media screen and (min-width: 600px) {
   .grid {
@@ -29,11 +25,13 @@ body {
   }
   .cell {
     width: 50%;
+    padding: 10px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .cell {
     width: 50%;
+    padding: 20px;
   }
 }
