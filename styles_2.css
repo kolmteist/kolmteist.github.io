@@ -25,13 +25,13 @@ body {
   }
   .cell {
     width: 50%;
-    padding: 10px;
+    margin: 10px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .cell {
     width: 50%;
-    padding: 20px;
+    margin: 20px;
   }
 }
